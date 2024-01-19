@@ -1,3 +1,5 @@
+const { singleQuote, endOfLine } = require("./.prettierrc")
+
 module.exports = {
   env: {
     commonjs: true,
@@ -14,6 +16,11 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'prettier/prettier': 'error',
+    {
+      singleQuote: true,
+      parser: 'flow',
+      endOfLine: 'auto',
+    }
   },
   ignorePatterns: ['03-files-in-folder/secret-folder/**/*.js'],
 };
