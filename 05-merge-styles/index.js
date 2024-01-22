@@ -17,26 +17,3 @@ fs.readdir(styleDir, {withFileTypes: true}, (err, files) => {
         }
     })
 })
-
-
-
-
-
-/*
-async function bundleCreator() {
-    fs.open(path.join(styleDir, 'bundle.css'), 'r', (err) => {console.log(err)})
-}
-
-
-async function bundleDeleter() {
-    const Items = await readdir(styleDir);
-    unlink(path.join(__dirname, 'styles', 'bundle.css'))
-}
-
-stat(path.join(__dirname, 'styles', 'bundle.css'))
-    .then(() => {
-        bundleDeleter()  
-    })
-    .catch(() => {
-        bundleCreator()
-    })*/
