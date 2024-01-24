@@ -10,7 +10,7 @@ const{ stdin } = process;
 
 stdin.on('data', (item) => {
     let a = item.toString();
-    if(a === 'exit\r\n') {
+    if(a === 'exit\r\n' || a === 'exit\n' || a === 'exit\r' || a === 'exit') {
         process.exit()
     }
     output.write(item)
